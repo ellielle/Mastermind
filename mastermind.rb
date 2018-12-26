@@ -211,9 +211,11 @@ end
 def end_game(game)
   if game == "X"
   elsif game.game_won
-    puts "\nYou've guessed the code! Press ENTER to exit."
+    puts "\nYou've guessed the code! Press ENTER to exit." if choice == "B"
+    puts "\nThe computer guessed the code! Press ENTER to exit." if choice == "M"
   else
-    puts "\nYou didn't guess the code. Press ENTER to exit."
+    puts "\nYou didn't guess the code. Press ENTER to exit." if choice == "B"
+    puts "\nThe computer didn't guess the code. Press ENTER to exit." if choice == "M"
   end
   gets if game != "X"
 end
