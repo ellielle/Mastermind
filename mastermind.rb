@@ -167,10 +167,6 @@ class MastermindCodeMaster < MastermindCodeBreaker
     puts 'The colors are as follows: green, pink, white, black, violet,'\
     ' orange, yellow, and cyan.'
   end
-
-  def choose_computer_colors
-
-  end
 end
 
 def check_choose_game(choice)
